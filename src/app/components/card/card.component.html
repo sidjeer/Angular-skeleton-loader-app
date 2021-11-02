@@ -1,0 +1,30 @@
+<div class="card text-center">
+    <div *ngIf="contentLoaded">
+        <div>
+            <img src="https://picsum.photos/200" >
+        </div>
+        <div class="id">ID:  {{this.myobj.id}}</div>
+    
+    <h2 class="name">{{this.myobj.name}}</h2>
+    <div>
+        {{this.myobj.username}}
+    </div>
+    <div>
+        {{this.myobj.email}}
+    </div>
+    </div>
+    <div *ngIf="!contentLoaded">
+        <ngx-skeleton-loader 
+    [theme]="{ width: '200px', 'border-radius': '0', height: '200px' }"></ngx-skeleton-loader>
+        <ngx-skeleton-loader 
+    [theme]="{ width: '52%', 'border-radius': '0', height: '15px' }"></ngx-skeleton-loader>
+    <ngx-skeleton-loader 
+    [theme]="{ width: '80%', 'border-radius': '0', height: '15px' }"></ngx-skeleton-loader>
+    <ngx-skeleton-loader 
+    [theme]="{ width: '70%', 'border-radius': '0', height: '15px' }"></ngx-skeleton-loader>
+    <ngx-skeleton-loader 
+    [theme]="{ width: '90%', 'border-radius': '0', height: '15px' }"></ngx-skeleton-loader>
+    </div>
+ </div>
+
+ 
